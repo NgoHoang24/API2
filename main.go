@@ -20,7 +20,7 @@ func main() {
 		v1.POST("/items", todotrpt.HandleCreateProfile(db))        // create item
 		v1.GET("/items", todotrpt.HandleListProfile(db))           // list items
 		v1.GET("/items/:id", todotrpt.HandleFindAProfile(db))      // get an item by ID
-		v1.PUT("/items/:id", todotrpt.HandleUpdateAnItem(db))      // edit an item by ID
+		v1.PUT("/items/:id", todotrpt.HandleUpdateAProfile(db))      // edit an item by ID
 		v1.DELETE("/items/:id", todotrpt.HandleDeleteAProfile(db)) // delete an item by ID
 	}
 
